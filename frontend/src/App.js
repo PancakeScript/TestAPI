@@ -72,7 +72,7 @@ function App() {
   const callAPI = async () => {
     try {
       // Note: Change en https:// si tu as configuré ton certificat SSL
-      const res = await fetch("https://testapi-m6va.onrender.com/api");
+      const res = await fetch("https://testapi-m6va.onrender.com/");
       const data = await res.json();
       setMessage(data.message);
       setIsError(false);
