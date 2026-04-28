@@ -3,7 +3,7 @@ const app = express();
 const cors = require ('cors');
 
 app.use(cors());
-app.get('/api', (req, res) =>{
+app.get('/', (req, res) =>{
     res.json({message :"Mon API fonctionne!"});
 })
 
